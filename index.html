@@ -11,23 +11,27 @@
       padding: 30px;
       background-color: #edffe0;
       margin: 0;
-      display: flex;
-      justify-content: center; /* Centre le contenu horizontalement */
-      align-items: center; /* Centre verticalement */
-      height: 100vh; /* Assure que la page prend toute la hauteur de la fenêtre */
     }
+
+    .menu-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
     h1 {
       text-align: center;
     }
+
     a {
       text-decoration: none;
       color: #333;
     }
+
     .dropdown {
-      position: relative;
       display: inline-block;
-      margin-bottom: 20px;
+      position: relative;
     }
+
     .dropdown-content {
       display: none;
       position: absolute;
@@ -36,21 +40,26 @@
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
+
     .dropdown-content a {
       color: black;
       padding: 10px 16px;
       text-decoration: none;
       display: block;
     }
+
     .dropdown-content a:hover {
       background-color: #ddd;
     }
+
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
     .dropdown:hover .dropbtn {
       background-color: #c0ffc0;
     }
+
     .dropbtn {
       background-color: #a8f0a5;
       color: black;
@@ -64,12 +73,14 @@
 </head>
 <body>
 
-  <!-- MENU DÉROULANT -->
-  <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-      <a href="Présentation site.html">À propos</a>
-      <a href="participants.html">Liste des participants</a>
+  <!-- CONTENEUR CENTRÉ POUR LE BOUTON -->
+  <div class="menu-container">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="Présentation site.html">À propos</a>
+        <a href="participants.html">Liste des participants</a>
+      </div>
     </div>
   </div>
 
