@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Site Collaboratif</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<style>
-			body {
-				font-family: "Times New Roman", sans-serif;
-				padding: 30px;
-				background-color: #edffe0;
-			}
-			h1 {
-				text-align: center;
-			}
-			ul {
-				list-style: none;
-				padding: 0;
-				max-width: 500px;
-				margin: auto;
-			}
-			li {
-				background: #85d9ff;
-				padding: 15px;
-				margin: 10px 0;
-				border-radius: 10px;
-				box-shadow: 0 0 10px rgba(0,0,0,0.1);
-			}
-			a {
-				text-decoration: none;
-				color: #333;
-			}
-		</style>
-		</head>
-		<body>
-			<!-- MENU -->
-			<div class="menu">
-				
-				<a href="Présentation site.html" class="ok">Présentation du site web statique collaboratif, cliquez <a href="https://www.ujkz.bf" target="_blank">ici</a>.</a>
-										
-				</div>
-						
-		<header>
-			<h1>Le site collaboratif des étudiants </h1>
-			<h1>IFOAD Session 2025</h1>
-			<nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Collaboratif</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Times New Roman", sans-serif;
+      padding: 30px;
+      background-color: #edffe0;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 500px;
+      margin: auto;
+    }
+    li {
+      background: #85d9ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f0f0f0;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown:hover .dropbtn {
+      background-color: #c0ffc0;
+    }
+    .dropbtn {
+      background-color: #a8f0a5;
+      color: black;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-			</nav>
-		</header>
-		
-		<ul>
-			<li><a href="cv-belem.html">BELEM Abdoulaye</a></li>
-			<li><a href="CV_GONGO_MAHAMOUDOU.html">GONGO Mahamoudou</a></li>
-			<li><a href="etudiant3.html">KAGAMBEGA Rasmané</a></li>
-			<li><a href="etudiant4.html">SALOUKA Yacouba</a></li>
-			<li><a href="cv_parfait.html">SAWADOGO N.W Parfait</a></li>
-			<li><a href="etudiant6.html">TRAORE Diakalya</a></li>
-		</ul>
-	</body>
+  <!-- BOUTON DÉROULANT -->
+  <div class="dropdown">
+    <button class="dropbtn">À propos</button>
+    <div class="dropdown-content">
+      <a href="Présentation site.html">Présentation du site</a>
+      <a href="#">Liste des participants</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Le site collaboratif des étudiants</h1>
+    <h1>IFOAD Session 2025</h1>
+  </header>
+
+  <ul>
+    <li><a href="cv-belem.html">BELEM Abdoulaye</a></li>
+    <li><a href="CV_GONGO_MAHAMOUDOU.html">GONGO Mahamoudou</a></li>
+    <li><a href="etudiant3.html">KAGAMBEGA Rasmané</a></li>
+    <li><a href="etudiant4.html">SALOUKA Yacouba</a></li>
+    <li><a href="cv_parfait.html">SAWADOGO N.W Parfait</a></li>
+    <li><a href="etudiant6.html">TRAORE Diakalya</a></li>
+  </ul>
+
+</body>
 </html>
